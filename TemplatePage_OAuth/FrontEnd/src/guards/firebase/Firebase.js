@@ -3,14 +3,14 @@ import 'firebase/compat/auth';
 import 'firebase/compat/database';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAN5-l2Mg-O3L-gFhdGEYkjbXxeq3afrZQ',
-  authDomain: 'reactprojects-b6bf1.firebaseapp.com',
-  projectId: 'reactprojects-b6bf1',
-  storageBucket: 'reactprojects-b6bf1.appspot.com',
-  messagingSenderId: '645018563926',
-  appId: '1:645018563926:web:ef4544ee772f67871a12f7',
-  measurementId: 'G-Y27B5MKNDM',
-  databaseURL: 'https://reactprojects-b6bf1-default-rtdb.firebaseio.com/',
+  apiKey: '',
+  authDomain: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
+  databaseURL: '',
 };
 
 if (!firebase.apps.length) {
