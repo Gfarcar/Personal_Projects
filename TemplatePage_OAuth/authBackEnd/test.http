@@ -1,0 +1,205 @@
+###
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "UserName": "Fernando", 
+    "Email": "fernando@fake.com", 
+    "Password": "Fernandito#123"
+}
+
+###
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "UserName": "Carlos", 
+    "Email": "carlos@fake.com", 
+    "Password": "Carlitos#123"
+}
+###
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "UserName": "Juan", 
+    "Email": "juan@fake.com", 
+    "Password": "Juanito#123"
+}
+###
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "UserName": "Jose", 
+    "Email": "jose@fake.com", 
+    "Password": "Josesito#123"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "fernando@fake.com", 
+    "password": "Fernandito#123"
+}
+###
+POST http://localhost:5000/users/logout 
+Content-Type: application/json
+
+{
+    "email": "fernando@fake.com", 
+}
+###
+POST  http://localhost:5000/users/1/roles/addrole/1
+
+###
+POST  http://localhost:5000/users/2/roles/addrole/2
+
+###
+POST  http://localhost:5000/users/3/roles/addrole/3
+
+###
+POST  http://localhost:5000/users/4/roles/addrole/4
+
+###
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJDYW5FZGl0U2V0dGluZ3MiOiJ0cnVlIiwiQ2FuTWFuYWdlVXNlcnMiOiJ0cnVlIiwibmJmIjoxNzI3MTk5NzYxLCJleHAiOjE3MjcyMDA2NjEsImlhdCI6MTcyNzE5OTc2MSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.bTSNszConDXEpu3MwRjIcGIXVopYvDVZ4SSmOY5LYkGq-vgUe33pxZkTAuGQZzoHYI7LQv6TBRmKMqluDYzipg
+
+
+###
+GET http://localhost:5000/users/1/roles
+###
+GET http://localhost:5000/users/2/roles
+###
+GET http://localhost:5000/users/3/roles
+###
+GET http://localhost:5000/users/4/roles
+
+###
+GET http://localhost:5000/users/1/claims
+
+###
+GET http://localhost:5000/users/2/claims
+
+###
+GET http://localhost:5000/users/3/claims
+
+###
+GET http://localhost:5000/users/4/claims
+
+###
+GET http://localhost:5000/users/Admin
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJDYW5FZGl0U2V0dGluZ3MiOiJ0cnVlIiwiQ2FuTWFuYWdlVXNlcnMiOiJ0cnVlIiwibmJmIjoxNzI3MjAwMDA3LCJleHAiOjE3MjcyMDA5MDcsImlhdCI6MTcyNzIwMDAwNywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.G2-Nxi8gct88-TwU5tWkIVFbbsnJXlp5ykwowOzvvssPZ1EoEvy7WMNTyQzjhwcdyBqWPqbh8OZCZEw55Saj_w
+
+###
+GET http://localhost:5000/users/refreshtokens
+Content-Type: application/json
+
+{
+    "refreshToken": "e62f77ed-04c6-4ec4-938a-dc13c716340c"
+}
+
+###
+POST  http://localhost:5000/users/revokeaccesstoken
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlcm5hbmRvQGZha2UuY29tIiwiZ2l2ZW5fbmFtZSI6IkZlcm5hbmRvIiwibmJmIjoxNzI3MjkwODc0LCJleHAiOjE3Mjc4OTU2NzQsImlhdCI6MTcyNzI5MDg3NCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIn0.uktSVVJop35udS64h0NCRnHt_Yr_52nerzloIthlGh1cyyLol2Q1l6h3MtCUtIHvh4WEXAM2730YPQ1MhbhdZA"
+}
+
+###
+POST  http://localhost:5000/users/revokerefreshtoken
+Content-Type: application/json
+
+{
+    "refreshToken": "55240de3-b027-4f35-be8e-240d318a3c71"
+}
+###
+GET http://localhost:5000/users/refreshtokens
+Content-Type: application/json
+
+{
+    "refreshToken": "025e7087-37c2-4989-99b5-eda8cd111c92"
+}
+
+###
+POST  http://localhost:5000/users/testlogin
+Content-Type: application/json
+
+{
+    "email": "fernando@fake.com", 
+    "password": "Fernandito#123"
+}
+###
+GET http://localhost:5000/users/userstable
+
+###
+PUT http://localhost:5000/users/userstable/update/1
+Content-Type: application/json
+
+"{\"Names\":\"Anita la huerfanita\"}"
+
+###
+GET http://localhost:5000/users/nominatable 
+
+
+###
+PUT http://localhost:5000/users/nominatable/update/1
+Content-Type: application/json
+
+"{\"cantidad\":\"7777\"}"
+
+###
+DELETE http://localhost:5000/users/nominatable/delete/1
+
+###
+POST http://localhost:5000/users/nominatable/create
+Content-Type: application/json
+
+{
+   "mes":"Enero",
+   "cantidad":"5000"
+}
+
+###
+GET  http://localhost:5000/horastrabajadas/table
+###
+GET  http://localhost:5000/nomina/table
+###
+GET  http://localhost:5000/roleclaimtable/table
+###
+GET  http://localhost:5000/role/table
+###
+GET  http://localhost:5000/salario/table
+###
+GET  http://localhost:5000/userclaims/table
+###
+GET  http://localhost:5000/userroles/table
+###
+GET  http://localhost:5000/userrefreshtokens/table
+###
+GET  http://localhost:5000/usertokens/table
+###
+GET  http://localhost:5000/userstable/table
+###
+GET  http://localhost:5000/nomina/chart
+###
+GET  http://localhost:5000/menuitems/1
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "Email": "ana.martinezgomez@example.com", 
+    "Password": "Mexicali#11"
+}
+###
+POST http://localhost:5000/users/my-account
+Content-Type: application/json
+
+{
+    "RefreshToken": "4461012c-2264-4f6f-9494-90badcabb08e"
+}
+

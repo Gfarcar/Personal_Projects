@@ -1,0 +1,6 @@
+@EzFitAPI_HostAddress = http://localhost:5234
+
+GET {{EzFitAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
